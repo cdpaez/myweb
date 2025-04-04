@@ -173,8 +173,8 @@
     transform: translateY(-50px);
     transition: transform 0.5s ease;
     position: absolute;
-    left: 45%;
-    top: 10%;
+    left: 50%;
+    top: 12%;
     background-color: #fff;
     padding: 10px;
     border-radius: 10px;
