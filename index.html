@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,23 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>RUNEDEV</title>
 </head>
+
 <body>
     <div class="envoltorio-principal">
         <header class="header-container">
 
             <h1 class="LOGO">&lt;runedev/&gt;</h1>
-            
-            <button id="menu-toggle" class="menu-toggle"><i class="fa-solid fa-bars" style="color: #B197FC;"></i></button>
+
+            <button id="menu-toggle" class="menu-toggle"><i class="fa-solid fa-bars"
+                    style="color: #B197FC;"></i></button>
 
             <nav id="navbar" class="navbar">
-               <ul class="navbar-list">
-                <li><a href="">inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-               </ul>
+                <ul class="navbar-list">
+                    <li><a href="">inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
             </nav>
         </header>
         <main class="contenido">
@@ -31,7 +34,7 @@
                 <p>
                     Soy Carlos
                     y me encantaría ayudarte
-                    en este mundo digital 
+                    en este mundo digital
                     de oportunidades.</p>
             </section>
             <section class="contenedor-servicios" id="servicios">
@@ -43,17 +46,17 @@
                             <li>mobile first</li>
                             <li>Maquetación</li>
                             <li>SEO</li>
-                        </ul>    
+                        </ul>
                     </div>
-                    <div class="subitem"> 
+                    <div class="subitem">
                         <img src="/assets/img/db.png" alt="">
                         <ul>
                             <div class="db">
                                 <img src="/assets/img/firebase.png" alt="">
                                 <img src="/assets/img/mysql.png" alt="">
                                 <img src="/assets/img/postgres.png" alt="">
-                              </div>
-                        </ul>    
+                            </div>
+                        </ul>
                     </div>
                     <div class="subitem">
                         <img src="/assets/img/redes.png" alt="">
@@ -61,60 +64,55 @@
                             <li>Configuración</li>
                             <li>Auditoría</li>
                             <li>VPNs seguras</li>
-                        </ul>    
+                        </ul>
                     </div>
-                    
+
                 </div>
-             </section>
-             <section class="contenedor-proyectos" id="proyectos">
+            </section>
+            <section class="contenedor-proyectos" id="proyectos">
                 <h1>proyectos</h1>
-                <ul class="proyectos-items">
-                    <li>
-                        <i class="fa-solid fa-image fa-bounce fa-2xl"></i>
-                        <a href="https://runedev.vercel.app">proyecto1</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-image fa-bounce fa-2xl"></i>
-                        <a href="https://simple-article-list-master.vercel.app/">proyecto2</a></li>
-                    <li>
-                        <i class="fa-solid fa-image fa-bounce fa-2xl"></i>
-                        <a href="https://join-our-news-letter.vercel.app/">proyecto3</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-image fa-bounce fa-2xl"></i>
-                        <a href="https://minimal-blog-card-starter-master-nine.vercel.app/">proyecto4</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-image fa-bounce fa-2xl"></i>
-                        <a href="https://simple-faq-ten.vercel.app/">proyecto5</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-image fa-bounce fa-2xl"></i>
-                        <a href="https://biblioteca-git-dev-cdpaezs-projects.vercel.app/">proyecto6</a>
-                    </li>
-                </ul>
-             </section>
+                <div class="carrusel">
+                  <button class="carrusel-btn prev">&#10094;</button>
+                  <div class="carrusel-items">
+                    <div class="slide">
+                      <i class="fa-solid fa-image fa-2xl"></i>
+                      <a href="https://runedev.vercel.app">proyecto1</a>
+                    </div>
+                    <div class="slide">
+                      <i class="fa-solid fa-image fa-2xl"></i>
+                      <a href="https://simple-article-list-master.vercel.app/">proyecto2</a>
+                    </div>
+                    <div class="slide">
+                      <i class="fa-solid fa-image fa-2xl"></i>
+                      <a href="https://join-our-news-letter.vercel.app/">proyecto3</a>
+                    </div>
+                    <!-- ... más slides -->
+                  </div>
+                  <button class="carrusel-btn next">&#10095;</button>
+                </div>
+              </section>
+              
         </main>
 
         <footer>
-            
+
             <!-- Columna 1: Sobre la marca -->
             <div class="sobre-nosotros">
                 <h3>Sobre Nosotros</h3>
                 <p>Runedev es una startapp centrada en facilitar el acceso al conocimiento informatico</p>
                 © 2025 Runedev. Todos los derechos reservados.
             </div>
-        
+
             <!-- Columna 2: Enlaces útiles -->
             <div class="enlaces">
                 <h3>Enlaces</h3>
-                <ul >
+                <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
                 </ul>
             </div>
-        
+
             <!-- Columna 3: Contacto / Redes -->
             <div class="Contactos" id="contacto">
                 <h3>Contacto</h3>
@@ -123,9 +121,11 @@
                 <i class="fa-brands fa-whatsapp fa-beat fa-xl"></i>
                 <i class="fa-brands fa-facebook fa-beat fa-xl"></i>
             </div>
-        
+
         </footer>
     </div>
     <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/carrusel.js"></script>
 </body>
+
 </html>
