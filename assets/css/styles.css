@@ -38,6 +38,15 @@
     text-transform: uppercase;
 }
 
+.menu-toggle {
+    width: 25%;
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
 
 .navbar {
     display: none;
@@ -51,32 +60,30 @@
     background-color:black;
   
     position: absolute;
-    left: 75%;
+    left: 50%;
     top: 80px;
     border-radius: 10px;
     z-index: 1000;
     padding: 1rem;
-    width: 25%;
+    width: 50%;
+    
 }
 
-.menu-toggle {
-    width: 25%;
-    display: block;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #333;
-}
 
 .navbar-list {
+    width: 70%;
+   
     list-style: none;
     font-size: 1.5em;
     font-family: monospace;
+    text-align: right;
+   
    
 }
 .navbar-list li a{
     text-decoration: none;
+    color: whitesmoke;
+   
     
 }
 
