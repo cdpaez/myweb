@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 /* contenedor principal */
@@ -49,19 +49,19 @@
 }
 
 .navbar {
+
     display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color:black;
     
 }
 
 .navbar.active {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:black;
-  
     position: absolute;
-    left: 50%;
-    top: 80px;
+    left: 48%;
+    top: 90px;
     border-radius: 10px;
     z-index: 1000;
     padding: 1rem;
@@ -71,20 +71,16 @@
 
 
 .navbar-list {
-    width: 70%;
-   
     list-style: none;
     font-size: 1.5em;
     font-family: monospace;
-    text-align: right;
-   
-   
+    text-align: right;  
 }
+
 .navbar-list li a{
-    text-decoration: none;
-    color: whitesmoke;
-   
-    
+   color: whitesmoke;
+   text-decoration: none;
+
 }
 
 /* cuerpo de la pagina */
