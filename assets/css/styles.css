@@ -157,17 +157,19 @@
 }
 
 .subitem img {
-    border-radius: 10px;
+    border-radius: 25px;
     width: 10em;
     height: auto;
     padding: 1em;
 }
 
 .subitem ul {
+    width: 55%;
+    height: auto;
     visibility: hidden;
     position: absolute;
-    left: 40%;
-    top: 15%;
+    left: 45%;
+    top: 10%;
     background-color: #fff;
     padding: 10px;
     border-radius: 10px;
@@ -178,10 +180,10 @@
 .subitem ul::after {
     content: "";
     position: absolute;
-    top: 30px;
+    top: 40px;
     left: -40px;
-    margin-left: -8px;
-    border-width: 20px;
+    margin-left: 25px;
+    border-width: 10px;
     border-style: solid;
     border-color: transparent whitesmoke transparent transparent;
 }
