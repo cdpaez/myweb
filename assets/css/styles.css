@@ -6,7 +6,9 @@
 }
 
 /* contenedor principal */
-
+.envoltorio-principal {
+    color-scheme: dark;
+}
 
 /* encabezado de la pagina */
 
@@ -165,7 +167,7 @@
     height: 48px;
 }
 .subitem ul {
-    width: 55%;
+    width: 45%;
     height: auto;
     visibility: hidden;
     transform: translateY(-50px);
