@@ -259,12 +259,6 @@ footer {
     padding: 1em;
 }
 
-.enlaces {
-    font-family: monospace;
-    font-size: 1em;
-    padding: 2em;
-}
-
 .enlaces ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -285,6 +279,7 @@ footer {
 }
 
 .enlaces ul li a {
+    font-family: monospace;
     text-decoration: none;
     color: white;
     font-weight: bold;
