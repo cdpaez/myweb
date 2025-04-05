@@ -364,7 +364,7 @@ footer {
     display: block;
 }
 
-.Contactos {
+.contactos {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -373,4 +373,7 @@ footer {
     font-family: monospace;
     font-size: 1em;
     gap: 1em;
+}
+.contactos a{
+    color: whitesmoke;
 }
