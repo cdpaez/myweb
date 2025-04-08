@@ -99,6 +99,7 @@
     justify-content: center;
     min-height: 100vh;
     gap: 2em;
+    text-align: center;
 }
 
 /* presentacion de la pagina web */
@@ -315,7 +316,7 @@ footer {
 
 .enlaces ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.5em;
     list-style: none;
     padding: 1em;
