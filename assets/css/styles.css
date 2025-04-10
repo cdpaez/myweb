@@ -237,6 +237,9 @@
     box-sizing: border-box;
     font-family: monospace;
 }
+.slide img{
+    width: 48px;
+}
 
 .slide a {
     display: block;
