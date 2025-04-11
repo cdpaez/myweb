@@ -30,6 +30,7 @@
 
 
     font-family: monospace;
+    font-size: 1.5em;
     letter-spacing: 0.5em;
     text-shadow:
         #0AF5EA 1px 1px,
@@ -97,23 +98,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 85vh;
     gap: 2em;
     text-align: center;
 }
 
 /* presentacion de la pagina web */
-.presentacion>img {
-    width: 50%;
+.presentacion img {
+    width: 100%;
     height: auto;
     border: 3px solid #A82272;
-    border-radius: 10px;
+    border-radius: 200px 50px 200px 50px;
 }
 
-.presentacion p {
+#presentacion__texto {
     text-align: center;
     letter-spacing: 2px;
     line-height: 2;
+    font-family: monospace;
+    font-size: 1.5em;
 }
 
 
@@ -357,7 +360,7 @@ footer {
 }
 
 /* Tablets (mínimo 600px y hasta 991px aprox) */
-@media (min-width: 600px) and (max-width: 991px) {
+@media screen and (min-width: 481px) {
     .envoltorio-principal {
         color-scheme: light;
         display: flex;
@@ -508,7 +511,7 @@ footer {
 }
 
 /* para dispositvos superiores al 1024px monitores y portatiles */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
     .envoltorio-principal {
         color-scheme: light;
         display: flex;
