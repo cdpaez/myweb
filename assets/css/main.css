@@ -2,5 +2,8 @@
 @import url(/assets/css/disposicion/header.css);
 @import url(/assets/css/disposicion/presentacion.css);
 @import url(/assets/css/disposicion/servicios.css);
+@import url(/assets/css/componentes/flipcard.css);
 @import url(/assets/css/disposicion/proyectos.css);
 @import url(/assets/css/disposicion/footer.css);
+@import url(/assets/css/mediaqueries/tablets.css);
+@import url(/assets/css/mediaqueries/desktop.css);

@@ -7,7 +7,9 @@
     <link rel="icon" href="/assets/img/fotos/foto.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+
     <title>RUNEDEV</title>
+
 </head>
 
 <body>
@@ -38,35 +40,85 @@
             <section class="contenedor-servicios" id="servicios">
                 <h1>servicios</h1>
                 <div class="items">
-                    <div class="subitem">
-                        <img src="/assets/img/webdesing.png" alt="">
-                        <ul>
-                            <li>mobile first</li>
-                            <li>Maquetación</li>
-                            <li>SEO</li>
-                        </ul>
+                    <!-- web desing -->
+                    <div class="card">
+                        <div class="card__inner">
+                              <div class="card__face card__face--front">
+                                <h2>Click Me</h2>
+                                <img src="/assets/img/webdesing.png" alt="">
+                              </div>
+                              <div class="card__face card__face--back">
+                                <div class="card__content">
+                                    <div class="card__header">
+                                        <img src="/assets/img/wd__flipcard.png" alt="">
+                                        <h2>web desing</h2>
+                                    </div>
+                                    <div class="card__body">
+                                        <h3>HTML, CSS, JS,  REACT</h3>
+                                        <ul>
+                                            <li>mobile first</li>
+                                            <li>Maquetación</li>
+                                            <li>SEO</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
                     </div>
-                    <div class="subitem">
-                        <img src="/assets/img/db.png" alt="">
-                        <ul>
-                            <div class="db">
-                                <img src="/assets/img/firebase.png" alt="">
-                                <img src="/assets/img/mysql.png" alt="">
-                                <img src="/assets/img/postgres.png" alt="">
-                            </div>
-                        </ul>
+                    <!-- database -->
+                    <div class="card">
+                        <div class="card__inner">
+                              <div class="card__face card__face--front">
+                                <h2>Click Me</h2>
+                                <img src="/assets/img/db.png" alt="">
+                              </div>
+                              <div class="card__face card__face--back">
+                                <div class="card__content">
+                                    <div class="card__header">
+                                        <img src="/assets/img/db__flipcard.png" alt="">
+                                        <h2>database</h2>
+                                    </div>
+                                    <div class="card__body">
+                                        <h3>Firebase, Postgres, Mysql</h3>
+                                        <ul>
+                                            <li>Modelado BD</li>
+                                            <li>Administracion de BD</li>
+                                            <li>Auditoria de BD</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
                     </div>
-                    <div class="subitem">
-                        <img src="/assets/img/redes.png" alt="">
-                        <ul>
-                            <li>Configuración</li>
-                            <li>Auditoría</li>
-                            <li>VPNs seguras</li>
-                        </ul>
+                    <!-- networking -->
+                    <div class="card">
+                        <div class="card__inner">
+                              <div class="card__face card__face--front">
+                                <h2>Click Me</h2>
+                                <img src="/assets/img/redes.png" alt="">
+                              </div>
+                              <div class="card__face card__face--back">
+                                <div class="card__content">
+                                    <div class="card__header">
+                                        <img src="/assets/img/nw__flipcard.png" alt="">
+                                        <h2>Network</h2>
+                                    </div>
+                                    <div class="card__body">
+                                        <h3>Cisco, Wireshark, Nmap </h3>
+                                        <ul>
+                                            <li>Configuración</li>
+                                            <li>Auditoría</li>
+                                            <li>VPNs seguras</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
                     </div>
 
                 </div>
             </section>
+            
             <section class="contenedor-proyectos" id="proyectos">
                 <h1>proyectos</h1>
                 <div class="carrusel">
@@ -136,6 +188,7 @@
     <script src="/assets/js/menu.js"></script>
     <script src="/assets/js/carrusel.js"></script>
     <script src="/assets/js/animacionVW.js"></script>
+    <script src="/assets/js/flipcard.js"></script>
 </body>
 
 </html>
