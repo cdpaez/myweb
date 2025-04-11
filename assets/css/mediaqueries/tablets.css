@@ -50,7 +50,7 @@
         width: 50%;
         height: auto;
         border: 3px solid #A82272;
-        border-radius: 200px 50px 200px 50px;
+        border-radius: 200px 50px 200px 200px;
     }
 
     #presentacion__texto {
