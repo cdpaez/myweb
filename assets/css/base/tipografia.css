@@ -1,0 +1,14 @@
+.card__face--front h2 {
+  text-transform: uppercase;
+}
+.card__body h3 {
+  font-family: monospace;
+  text-align: center;
+  font-size: 2em;
+}
+.card__body ul {
+  list-style: none;
+  font-family: monospace;
+  text-align: center;
+  font-size: 2em;
+}
