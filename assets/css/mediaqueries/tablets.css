@@ -62,14 +62,37 @@
 
     .items {
         width: 100%;
-        background-color: #422838;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 1em;
 
     }
-    .carrusel{
+
+    .card__body ul {
+        list-style: none;
+        font-family: monospace;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .carrusel {
         width: 50%;
+    }
+
+    .contactos__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .contactos__lista-item a {
+        width: 100px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactos__lista-item a span {
+       display: none;
     }
 }
