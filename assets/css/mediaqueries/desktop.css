@@ -320,6 +320,12 @@
         align-items: normal;
         gap: 1em;
     }
+    .card__body ul {
+        list-style: none;
+        font-family: monospace;
+        text-align: center;
+        font-size: 2em;
+      }
 
 
 }
