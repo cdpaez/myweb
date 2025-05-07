@@ -1,5 +1,5 @@
-
 .carrusel {
+  
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -23,7 +23,7 @@
 }
 
 .slide img {
-  width: 48px;
+  width: 96px;
 }
 
 .slide a {
@@ -33,6 +33,7 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2em;
+  color: white;
 }
 
 .carrusel-btn {
