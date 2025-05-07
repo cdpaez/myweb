@@ -13,7 +13,7 @@
 }
 .fa-brands{
   color: #262626;
-  font-size: 30px;
+  font-size: 15px;
   line-height: 80px;
   transition: .5s;
   padding-right: 14px;
@@ -40,6 +40,7 @@
   top: 30px;
   letter-spacing: 4px;
   transition: .5s;
+  font-size: 12px;
 }
 .contactos__lista-item a:before{
   content: '';

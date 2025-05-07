@@ -22,23 +22,28 @@
   align-items: center;
   justify-content: center;
   margin: 1em;
- 
-}
 
+}
 
 .contenedor-servicios h1,
 .contenedor-proyectos h1 {
   font-size: 3em;
   margin: 2em;
   text-transform: uppercase;
-  
+
 }
+
 .contenedor-proyectos h1 {
   color: white;
+  text-shadow:
+    black 1px 1px,
+    #F500A9 -1px 1px;
 }
+
 .contenedor-proyectos {
   background: url(/assets/img/banners/code.jpg) no-repeat center center / 100% 100%;
 }
+
 .contenedor-proyectos__div {
   position: relative;
   width: 100%;
