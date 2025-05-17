@@ -21,7 +21,7 @@
     }
 
     .LOGO.visible {
-        animation: tracking-in-contract 2s linear both
+        animation: tracking-in-contract .8s linear both
     }
 
 

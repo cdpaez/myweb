@@ -1,4 +1,4 @@
-const titulos = document.querySelectorAll('.LOGO, #presentacion__texto, #servicios h1, #proyectos h1');
+const titulos = document.querySelectorAll('.LOGO, #presentacion__texto, #servicios h1, #proyectos h1, .card');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -9,7 +9,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.5 // puedes ajustar cuánto debe estar visible para activarse
+  threshold: 0.2 // puedes ajustar cuánto debe estar visible para activarse
 });
 
 titulos.forEach(el => observer.observe(el));
