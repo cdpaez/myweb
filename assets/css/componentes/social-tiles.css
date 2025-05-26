@@ -83,12 +83,12 @@
 }
 .contactos__lista-item:hover:nth-child(2){
   & a{
-    background: #00aced;
+    background: #e4405f;
     &::before{
-      background: #097aa5;
+      background: #d81c3f;
     }
     &::after{
-      background: #53b9e0;
+      background: #e46880;
     }
   }
 }
