@@ -4,6 +4,9 @@
   box-sizing: border-box;
   /* outline: 1px solid red; */
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* cuerpo de la pagina */
 .contenido {
