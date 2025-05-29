@@ -1,35 +1,35 @@
-
 .presentacion {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 85vh;
+  width: auto;
   gap: 2em;
   text-align: center;
-  background: url(/assets/img/banners/escritorio.webp) no-repeat center center / 100% 100%;
- 
+  background: url(/assets/img/banners/escritorio.webp) no-repeat bottom center / 200% 200%;
+  padding: 3rem 0rem;
+
 }
 
 /* presentacion de la pagina web */
 .presentacion img {
-  width: 100%;
-  height: auto;
-  
-  border-radius: 200px 50px 200px 50px;
+  width: 90%;
+  height: 100%;
+  border-radius: 150px 50px 150px 50px;
   padding: 2em;
 }
 
 #presentacion__texto {
+  width: clamp(50%,90%,120%);
   text-align: center;
   letter-spacing: 2px;
-  line-height: 2;
+  line-height: 2rem;
   font-family: monospace;
   font-size: 1.5em;
   color: white;
   text-shadow:
-      black 1px 1px,
-      #F500A9 -1px 1px;
+    black 1px 1px,
+    #F500A9 -1px 1px;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(15px);

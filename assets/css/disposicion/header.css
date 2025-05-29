@@ -73,7 +73,6 @@
 
 /* efecto de hover doble linea cuando el usuario pone el cursor */
 .hover-underline {
-  font-size: 2rem;
   color: #ffffff;
   position: relative;
   display: inline-block;

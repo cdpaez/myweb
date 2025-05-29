@@ -1,5 +1,35 @@
+.contenedor-proyectos {
+  background: url(/assets/img/banners/code.webp) no-repeat top center / 200% 200%;
+}
+
+.contenedor-proyectos__div {
+  position: relative;
+  width: 80dvw;
+  height: 50dvh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-proyectos__div h1 {
+  color: white;
+  text-shadow:
+    black 1px 1px,
+    #F500A9 -1px 1px;
+  margin: 1rem;
+  font-size: clamp(2rem,1vw,2.5rem);
+}
+
 .carrusel {
-  
+
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -57,9 +87,9 @@
 }
 
 .carrusel-btn.prev {
-  left: 10px;
+  left: 5px;
 }
 
 .carrusel-btn.next {
-  right: 10px;
+  right: 5px;
 }
