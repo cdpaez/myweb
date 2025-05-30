@@ -149,7 +149,12 @@
     .card {
         height: 70vh;
     }
-
+    .card__body h3 {
+        font-size: clamp(2rem,2vw,3rem);
+    }
+    .card__body li {
+        font-size: clamp(2rem,1.5vw,3rem);
+    }
     .contenedor-proyectos__div {
         width: 50%;
     }
