@@ -4,11 +4,11 @@
 .card__body h3 {
   font-family: monospace;
   text-align: center;
-  font-size: 2em;
+  font-size: clamp(1rem,1vw,2rem);
 }
 .card__body ul {
   list-style: none;
   font-family: monospace;
   text-align: center;
-  font-size: 2em;
+  font-size: clamp(2rem,1vw,2rem);
 }
