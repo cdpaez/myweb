@@ -1,5 +1,5 @@
 /* para dispositvos superiores al 1024px monitores y portatiles */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
     .envoltorio-principal {
         color-scheme: light;
         display: flex;
@@ -93,12 +93,6 @@
         display: block;
         font-size: 2em;
         font-family: monospace;
-        white-space: nowrap;
-        border-right: 4px solid;
-        width: 86ch;
-
-        animation: maquina 2s steps(86), tecleo .5s infinite step-end alternate;
-        overflow: hidden;
     }
 
     @keyframes maquina {
@@ -115,16 +109,16 @@
 
     /* diseno de los servicios que se ofrece */
     .contenedor-servicios {
-
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         width: 100%;
     }
 
     #servicios h1.visible,
     #proyectos h1.visible {
-        animation: blur-in 1s linear both
+        animation: blur-in 1s linear both;
+        margin: 2rem;
     }
 
     @keyframes blur-in {
@@ -147,17 +141,37 @@
         width: 100%;
     }
     .card {
-        height: 50vh;
-        width: 22vw;
+        height: 60vh;
+        width: 100vw;
+    }
+    .card__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0.5rem 0rem;
+    }
+    .card__header img {
+        margin: 0;
+    }
+    .card__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: auto;
     }
     .card__body h3 {
         font-size: 1rem;
+        margin: 1rem 0rem;
     }
     .card__body ul li {
         font-size: 1rem,1vw,1rem;
     }
     .contenedor-proyectos__div {
-        width: 50%;
+        width: 80vw;
+        height: 50vh;
     }
 
     /* contenedor de los proyectos realizados */
@@ -165,6 +179,7 @@
     .carrusel {
         position: relative;
         width: 50%;
+        height: 70vh;
         overflow: hidden;
         display: flex;
         align-items: center;
