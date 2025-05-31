@@ -91,8 +91,13 @@
 
     #presentacion__texto {
         display: block;
-        font-size: 2em;
+        font-size: 1.9em;
         font-family: monospace;
+         white-space: nowrap;
+        border-right: 4px solid;
+        width: 86ch;
+        animation: maquina 2s steps(86), tecleo .5s infinite step-end alternate;
+        overflow: hidden;
     }
 
     @keyframes maquina {
@@ -144,6 +149,12 @@
         height: 60vh;
         width: 100vw;
     }
+    .card__face--front img {
+        width: 75%;
+        height: 75%;
+        object-fit: contain;
+        aspect-ratio: 1/1;
+    }
     .card__header {
         display: flex;
         flex-direction: row;
@@ -167,11 +178,11 @@
         margin: 1rem 0rem;
     }
     .card__body ul li {
-        font-size: 1rem,1vw,1rem;
+        font-size: clamp(1rem,1vw,1rem);
     }
     .contenedor-proyectos__div {
         width: 80vw;
-        height: 50vh;
+        height: 55vh;
     }
 
     /* contenedor de los proyectos realizados */
@@ -202,6 +213,9 @@
 
     .slide img {
         width: 100px;
+        height: 100px;
+        object-fit: contain;
+        aspect-ratio: 1/1;
     }
 
     .slide a {
