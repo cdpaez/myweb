@@ -51,6 +51,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0rem 2rem 0rem 0rem;
     }
 
     .navbar-list {
@@ -73,12 +74,9 @@
 
     /* estilos para el contenido principal */
     .contenido {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .presentacion {
-        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        
     }
 
     .presentacion img {
@@ -90,14 +88,9 @@
     }
 
     #presentacion__texto {
-        display: block;
-        font-size: 1.9em;
-        font-family: monospace;
-         white-space: nowrap;
-        border-right: 4px solid;
-        width: 86ch;
-        animation: maquina 2s steps(86), tecleo .5s infinite step-end alternate;
-        overflow: hidden;
+        font-size: clamp(1rem,1vw,2rem);
+        padding: 0;
+        margin: 0;
     }
 
     @keyframes maquina {
@@ -113,16 +106,13 @@
     }
 
     /* diseno de los servicios que se ofrece */
-    .contenedor-servicios {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 100%;
+    .carrusel-servicios {
+        height: 90%;
+        width: 90%;
     }
-
     #servicios h1.visible,
     #proyectos h1.visible {
-        animation: blur-in 1s linear both;
+        /* animation: blur-in 1s linear both; */
         margin: 2rem;
     }
 
@@ -141,9 +131,6 @@
     .items {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
     }
     .card {
         height: 60vh;

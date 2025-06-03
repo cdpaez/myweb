@@ -1,12 +1,16 @@
-@import url(/assets/css/base/resetear.css);
-@import url(/assets/css/base/tipografia.css);
-@import url(/assets/css/disposicion/header.css);
-@import url(/assets/css/disposicion/presentacion.css);
-@import url(/assets/css/disposicion/servicios.css);
+@import url(/assets/css/generales/espacios.css);
+/* SEO */
+@import url(/assets/css/seo/header.css);
+@import url(/assets/css/seo/footer.css);
+@import url(/assets/css/seo/main/1-presentacion.css);
+@import url(/assets/css/seo/main/2-servicios.css);
+@import url(/assets/css/seo/main/3-proyectos.css);
+
+/* componetes */
+@import url(/assets//css/componentes/carruselServicios.css);
 @import url(/assets/css/componentes/flipcard.css);
-@import url(/assets/css/disposicion/proyectos.css);
-@import url(/assets/css/disposicion/footer.css);
 @import url(/assets/css/componentes/social-tiles.css);
+/* mediaqueries */
 @import url(/assets/css/mediaqueries/tablets.css);
 @import url(/assets/css/mediaqueries/laptop.css);
 @import url(/assets/css/mediaqueries/desktop.css);

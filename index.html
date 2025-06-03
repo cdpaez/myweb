@@ -16,7 +16,9 @@
 </head>
 
 <body>
+
   <div class="envoltorio-principal">
+
     <header class="header-container">
 
       <h1 class="LOGO">&lt;runedev/&gt;</h1>
@@ -32,6 +34,8 @@
         </ul>
       </nav>
     </header>
+
+    
     <main class="contenido">
 
       <section class="presentacion">
@@ -41,9 +45,10 @@
       </section>
 
       <section class="contenedor-servicios" id="servicios">
-        <h1>servicios</h1>
+
         <div class="items">
-          <!-- web desing -->
+
+          <!-- componente card - desarrollo web -->
           <div class="card">
             <div class="card__inner">
               <div class="card__face card__face--front">
@@ -52,23 +57,48 @@
               </div>
               <div class="card__face card__face--back">
                 <div class="card__content">
+
                   <div class="card__header">
+
                     <img src="/assets/img/wd__flipcard.png" alt="">
 
                   </div>
+
                   <div class="card__body">
-                    <h3>HTML, CSS, JS, REACT+VITE</h3>
-                    <ul>
-                      <li>mobile first</li>
-                      <li>Maquetación</li>
-                      <li>SEO</li>
-                    </ul>
+                    <!-- componente carrusel servicios -->
+                    <div class="carrusel-servicios">
+                      <button class="carrusel-btn-servicios prev">&#10094;</button>
+                      <div class="carrusel-items-servicios">
+
+                        <div class="slide-servicios">
+                          <img src="/assets/img/servicios/phone.png" alt="">
+                          <h2>mobile first</h2>
+                          <p>Diseño y desarrollo que prioriza primero la experiencia en dispositivos móviles.</p>
+                        </div>
+                        <div class="slide-servicios">
+
+                          <img src="/assets/img/servicios/maqueta.png" alt="">
+                          <h2>Maquetación</h2>
+                          <p>Estructura y estilo del contenido de la página web utilizando HTML y CSS.</p>
+                        </div>
+                        <div class="slide-servicios">
+
+                          <img src="/assets/img/servicios/seo.png" alt="">
+                          <h2>SEO</h2>
+                          <p>Técnicas que optimizan el sitio web para mejorar su búsqueda en Google.</p>
+                        </div>
+                        <!-- ... más slides -->
+                      </div>
+                      <button class="carrusel-btn-servicios next">&#10095;</button>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- database -->
+
+          <!-- componente card - database -->
           <div class="card">
             <div class="card__inner">
               <div class="card__face card__face--front">
@@ -82,16 +112,40 @@
 
                   </div>
                   <div class="card__body">
-                    <h3>Firebase, Postgres, Mysql</h3>
-                    <ul>
-                      <li>Modelado, administración y auditoría de BD</li>
-                    </ul>
+
+                    <!-- componente carrusel servicios -->
+                    <div class="carrusel-servicios">
+                      <button class="carrusel-btn-servicios prev">&#10094;</button>
+                      <div class="carrusel-items-servicios">
+
+                        <div class="slide-servicios">
+                          <img src="/assets/img/servicios/phone.png" alt="">
+                          <h2>Modelado</h2>
+                          <p>Organiza y define la estructura y sus relaciones de una forma eficiente.</p>
+                        </div>
+                        <div class="slide-servicios">
+
+                          <img src="/assets/img/servicios/maqueta.png" alt="">
+                          <h2>Administración</h2>
+                          <p>Gestión y mantenimiento para garantizar su disponibilidad, seguridad, integridad y rendimiento óptimo.</p>
+                        </div>
+                        <div class="slide-servicios">
+
+                          <img src="/assets/img/servicios/seo.png" alt="">
+                          <h2>Auditoría</h2>
+                          <p>supervisa y analiza las actividades realizadas para garantizar la seguridad, el cumplimiento y la trazabilidad de la información.</p>
+                        </div>
+                        <!-- ... más slides -->
+                      </div>
+                      <button class="carrusel-btn-servicios next">&#10095;</button>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- networking -->
+          <!-- componente card - networking -->
           <div class="card">
             <div class="card__inner">
               <div class="card__face card__face--front">
@@ -105,12 +159,34 @@
 
                   </div>
                   <div class="card__body">
-                    <h3>Cisco, Wireshark, Nmap </h3>
-                    <ul>
-                      <li>Configuración</li>
-                      <li>Auditoría</li>
-                      <li>VPNs seguras</li>
-                    </ul>
+
+                    <!-- componente carrusel servicios -->
+                    <div class="carrusel-servicios">
+                      <button class="carrusel-btn-servicios prev">&#10094;</button>
+                      <div class="carrusel-items-servicios">
+
+                        <div class="slide-servicios">
+                          <img src="/assets/img/servicios/load-balaning.png" alt="">
+                          <h2>Diseño</h2>
+                          <p>Establece y ajusta de manera eficiente tus dispositivos de red.</p>
+                        </div>
+                        <div class="slide-servicios">
+
+                          <img src="/assets/img/servicios/network-switch.png" alt="">
+                          <h2>Configuración</h2>
+                          <p>Optimiza y gestiona de manera eficiente tus dispositivos de red.</p>
+                        </div>
+                        <div class="slide-servicios">
+
+                          <img src="/assets/img/servicios/modem.png" alt="">
+                          <h2>Seguridad</h2>
+                          <p>Análisis de vulnerabilidades, Monitoreo y detección, Mantenimiento y soporte</p>
+                        </div>
+                        <!-- ... más slides -->
+                      </div>
+                      <button class="carrusel-btn-servicios next">&#10095;</button>
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -122,7 +198,7 @@
 
       <section class="contenedor-proyectos" id="proyectos">
         <div class="contenedor-proyectos__div">
-          <h1>proyectos</h1>
+
           <div class="carrusel">
             <button class="carrusel-btn prev">&#10094;</button>
             <div class="carrusel-items">
@@ -138,8 +214,8 @@
               </div> -->
               <div class=" slide">
 
-                  <img src="/assets/img/logo/inventario.png" alt="">
-                  <a href="https://sgdi.vercel.app" target="_blank" rel="noopener noreferrer">Inventario</a>
+                <img src="/assets/img/logo/inventario.png" alt="">
+                <a href="https://sgdi.vercel.app" target="_blank" rel="noopener noreferrer">Inventario</a>
               </div>
               <div class=" slide">
 
@@ -224,8 +300,10 @@
   </div>
   <script src="/assets/js/menu.js"></script>
   <script src="/assets/js/carrusel.js"></script>
+  <script src="/assets/js/carruselServicios.js"></script>
   <script src="/assets/js/animacionVW.js"></script>
   <script src="/assets/js/flipcard.js"></script>
+  <script src="/assets/js/utils.js"></script>
 </body>
 
 </html>
