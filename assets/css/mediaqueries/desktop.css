@@ -1,11 +1,5 @@
 /* para dispositvos superiores al 1024px monitores y portatiles */
 @media screen and (min-width: 1440px) {
-    .envoltorio-principal {
-        color-scheme: light;
-        display: flex;
-        flex-direction: column;
-    }
-
     .header-container {
         display: flex;
         flex-direction: row;
@@ -14,7 +8,7 @@
     }
 
     .LOGO {
-        font-size: clamp(1rem,4vw,4rem);
+        font-size: clamp(1rem, 4vw, 4rem);
         text-align: start;
         margin-left: 1em;
 
@@ -63,7 +57,7 @@
     }
 
     .navbar-list li a {
-        font-size: clamp(1rem,2vw,2rem);
+        font-size: clamp(1rem, 2vw, 2rem);
     }
 
     .navbar-list li a:hover {
@@ -71,11 +65,7 @@
         text-decoration: none;
     }
 
-    /* estilos para el contenido principal */
-    .contenido {
-        display: flex;
-        flex-direction: column;
-    }
+    /* hero-section */
 
     .presentacion {
         width: 100%;
@@ -113,18 +103,13 @@
         }
     }
 
-    /* diseno de los servicios que se ofrece */
+    /* servicios */
     .contenedor-servicios {
-
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 100%;
-    }
-
-    #servicios h1.visible,
-    #proyectos h1.visible {
-        animation: blur-in 1s linear both
+        background-color: #e2613d ;
     }
 
     @keyframes blur-in {
@@ -144,24 +129,35 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 66%;
+        width: 100%;
     }
+
     .card {
-        height: 55vh;
-        width: 30vw;
+        height: 80vh;
+        width: 25vw;
+    }
+
+    .card__face--front img {
+        width: 75%;
+        height: 75%;
     }
     .card__body h3 {
         font-size: 1rem;
     }
+
     .card__body ul li {
-        font-size: clamp(1rem,1.5vw,2rem);
+        font-size: clamp(1rem, 1.5vw, 2rem);
     }
+
     .contenedor-proyectos__div {
         width: 50%;
     }
 
-    /* contenedor de los proyectos realizados */
+    .carrusel-servicios {
+        height: 70%;
+    }
 
+    /* contenedor de los proyectos realizados */
     .carrusel {
         position: relative;
         width: 50%;

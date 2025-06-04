@@ -1,11 +1,5 @@
 /* para dispositvos superiores al 1024px monitores y portatiles */
 @media screen and (min-width: 1024px) {
-    .envoltorio-principal {
-        color-scheme: light;
-        display: flex;
-        flex-direction: column;
-    }
-
     .header-container {
         display: flex;
         flex-direction: row;
@@ -14,7 +8,7 @@
     }
 
     .LOGO {
-        font-size: clamp(1rem,4vw,4rem);
+        font-size: clamp(1rem, 4vw, 4rem);
         text-align: start;
         margin-left: 1em;
 
@@ -64,7 +58,7 @@
     }
 
     .navbar-list li a {
-        font-size: clamp(1rem,2vw,2rem);
+        font-size: clamp(1rem, 2vw, 2rem);
     }
 
     .navbar-list li a:hover {
@@ -73,12 +67,14 @@
     }
 
     /* estilos para el contenido principal */
-    .contenido {
+    .main-container {
         display: grid;
         grid-template-columns: 100%;
-        
+        grid-template-rows: repeat(3, 1fr);
+
     }
 
+    /* herosection */
     .presentacion img {
         width: 20%;
         height: auto;
@@ -88,32 +84,21 @@
     }
 
     #presentacion__texto {
-        font-size: clamp(1rem,1vw,2rem);
+        font-size: clamp(1rem, 1vw, 2rem);
         padding: 0;
         margin: 0;
     }
 
-    @keyframes maquina {
-        from {
-            width: 0;
-        }
+    /* servicios */
+    .contenedor-servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    @keyframes tecleo {
-        50% {
-            border-color: transparent
-        }
-    }
-
-    /* diseno de los servicios que se ofrece */
     .carrusel-servicios {
         height: 90%;
         width: 90%;
-    }
-    #servicios h1.visible,
-    #proyectos h1.visible {
-        /* animation: blur-in 1s linear both; */
-        margin: 2rem;
     }
 
     @keyframes blur-in {
@@ -132,25 +117,30 @@
         display: flex;
         flex-direction: row;
     }
+
     .card {
-        height: 60vh;
+        height: 100vh;
         width: 100vw;
     }
+
     .card__face--front img {
         width: 75%;
         height: 75%;
         object-fit: contain;
         aspect-ratio: 1/1;
     }
+
     .card__header {
         display: flex;
         flex-direction: row;
         justify-content: center;
         padding: 0.5rem 0rem;
     }
+
     .card__header img {
         margin: 0;
     }
+
     .card__body {
         display: flex;
         flex-direction: column;
@@ -158,15 +148,18 @@
         align-items: center;
         margin: 0;
         padding: 0;
-        height: auto;
+        height: 100vh;
     }
+
     .card__body h3 {
         font-size: 1rem;
         margin: 1rem 0rem;
     }
+
     .card__body ul li {
-        font-size: clamp(1rem,1vw,1rem);
+        font-size: clamp(1rem, 1vw, 1rem);
     }
+
     .contenedor-proyectos__div {
         width: 80vw;
         height: 55vh;
