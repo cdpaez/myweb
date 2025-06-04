@@ -1,3 +1,10 @@
+:root {
+  --primary: #04B08C;
+  --secondary: #6D5D8E;
+  --dark: #212122;
+  --light: #F3F3F3;
+}
+
 .items {
   width: 100%;
   display: flex;
@@ -5,6 +12,214 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .contenedor-servicios {
   width: 100%;
+}
+
+/* flip-card de los servicios */
+
+.card {
+  padding: 1em;
+  width: 90%;
+  height: 500px;
+}
+
+.visible {
+  animation: blur-in 1s linear both
+}
+
+@keyframes blur-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0
+  }
+
+  100% {
+    filter: blur(0);
+    opacity: 1
+  }
+}
+
+
+.card__inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative
+}
+
+.card__inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front {
+  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__face--front img {
+  border-radius: 25px;
+  width: 100%;
+  height: auto;
+  padding: 1em;
+}
+
+.card__face--front h2 {
+  color: #FFF;
+  font-size: 32px;
+}
+
+.card__face--back {
+  background-color: var(--light);
+  transform: rotateY(180deg);
+}
+
+.card__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__header {
+  position: relative;
+  padding: 30px 30px 40px;
+  height: 20%;
+}
+
+.card__header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 0 0 50% 0;
+  background-image: linear-gradient(to bottom right, var(--primary) 10%, var(--secondary) 115%);
+}
+
+.card__header img {
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  background-color: #FFF;
+  border: 5px solid #FFF;
+  object-fit: cover;
+}
+
+.card__body {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+/* carrusel con informacion de los servicios ofrecidos */
+.carrusel-servicios {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 10%;
+}
+
+.carrusel-items-servicios {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-servicios {
+  height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: .5em;
+  font-family: monospace;
+}
+
+.slide-servicios img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+}
+
+.slide-servicios h2 {
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+.slide-servicios p {
+  margin: 2rem 0rem 0rem 0rem;
+  font-weight: bold;
+  font-size: .9em;
+  color: white;
+}
+
+.carrusel-btn-servicios {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #A82272;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.carrusel-btn-servicios:hover {
+  background: #DB0085;
+  opacity: 1;
+}
+
+.carrusel-btn-servicios.prev {
+  left: 10px;
+  z-index: 100;
+}
+
+.carrusel-btn-servicios.next {
+  right: 10px;
+  z-index: 100;
 }

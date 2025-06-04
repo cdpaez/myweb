@@ -1,16 +1,5 @@
 
-footer {
-  height: 100%;
-  width: 100%;
-  border: 2px solid #33292F;
-  background-color: #33292F;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
+
 .sobre-nosotros {
   display: flex;
   flex-direction: column;
