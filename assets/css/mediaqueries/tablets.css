@@ -69,10 +69,12 @@
         align-items: center;
 
     }
+
     .card {
         width: 50%;
         height: 72dvh;
     }
+
     .card__body {
         height: 70%;
         display: flex;
@@ -80,23 +82,52 @@
         justify-content: center;
         align-items: center;
     }
+
     .card__body h3 {
-        font-size: clamp(1rem,2vw,3rem);
+        font-size: clamp(1rem, 2vw, 3rem);
     }
+
     .card__body ul {
         list-style: none;
         font-family: monospace;
         text-align: center;
     }
+
     .card__body ul li {
         list-style: none;
         font-family: monospace;
         text-align: center;
         font-size: 1em;
     }
+
     .carrusel-servicios {
         height: 90%;
     }
+
+    /* efecto direcction hover */
+    .container {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .items__list {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    .items__list> :nth-child(2n-1) {
+        justify-self: end;
+        /* alinea a la derecha en la primera columna */
+    }
+
+    .items__list> :nth-child(2n) {
+        justify-self: start;
+        /* alinea a la izquierda en la segunda columna */
+    }
+
     /* carrusel para los proyectos */
     .carrusel {
         width: 50%;
@@ -119,10 +150,12 @@
     .contactos__lista-item a span {
         display: none;
     }
+
     .carrusel-btn.prev {
         position: absolute;
         left: -10px;
     }
+
     .carrusel-btn.next {
         position: absolute;
         right: -10px;

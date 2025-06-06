@@ -8,11 +8,8 @@ h1 {
 }
 
 .container {
-    width: 840px;
+    width: 100%;
     margin: 50px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
 }
 
 .items__list {
