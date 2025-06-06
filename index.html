@@ -12,6 +12,7 @@
   <!-- links con estilos para la pagina web -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/componentes/direcctionHover.css">
   <link rel="preload" as="image" href="/assets/img/banners/code.webp">
 
   <title>RUNEDEV</title>
@@ -38,7 +39,7 @@
       </nav>
     </header>
 
-    
+
     <main class="main-container">
 
       <section class="presentacion">
@@ -94,7 +95,7 @@
                       </div>
                       <button class="carrusel-btn-servicios next">&#10095;</button>
                     </div>
-                    
+
                   </div>
                 </div>
               </div>
@@ -130,19 +131,21 @@
 
                           <img src="/assets/img/servicios/query.png" alt="">
                           <h2>Administración</h2>
-                          <p>Gestión y mantenimiento para garantizar su disponibilidad, seguridad, integridad y rendimiento óptimo.</p>
+                          <p>Gestión y mantenimiento para garantizar su disponibilidad, seguridad, integridad y
+                            rendimiento óptimo.</p>
                         </div>
                         <div class="slide-servicios">
 
                           <img src="/assets/img/servicios/data-management.png" alt="">
                           <h2>Auditoría</h2>
-                          <p>supervisa y analiza las actividades realizadas para garantizar la seguridad, el cumplimiento y la trazabilidad de la información.</p>
+                          <p>supervisa y analiza las actividades realizadas para garantizar la seguridad, el
+                            cumplimiento y la trazabilidad de la información.</p>
                         </div>
                         <!-- ... más slides -->
                       </div>
                       <button class="carrusel-btn-servicios next">&#10095;</button>
                     </div>
-                    
+
                   </div>
                 </div>
               </div>
@@ -198,9 +201,54 @@
 
         </div>
       </section>
-
+      <!-- TODO: agregar le efecto direction hover para mostrar indicaciones de los proyectos realizados -->
       <section class="contenedor-proyectos" id="proyectos">
+
+        <!-- efecto direction hover -->
+        <div class="container">
+          <ul class="items__list">
+
+            <li class="items__list--product">
+              <a href="#contacto">
+                <div class="normal"><h2 class="LOGO-proyectos">&lt;runedev/&gt;</h2></div>
+                <div class="info">
+                  <h3>ItNotes</h3>
+                  <p>App para tomar notas, chatear con amigos, y una espectacular agenda</p>
+                </div>
+              </a>
+            </li>
+            <li class="items__list--product">
+              <a href="#contacto">
+                <div class="normal"><h2 class="LOGO-proyectos">&lt;runedev/&gt;</h2></div>
+                <div class="info">
+                  <h3>Copter</h3>
+                  <p>ERP centrado en gestionar productos, usuarios, ventas, estadisticas, para una muestra comuniquese con nosotros.</p>
+                </div>
+              </a>
+            </li>
+            <li class="items__list--product">
+              <a href="#contacto">
+                <div class="normal"><h2 class="LOGO-proyectos">&lt;runedev/&gt;</h2></div>
+                <div class="info">
+                  <h3>Tres en Raya</h3>
+                  <p>Te hartaste de todo? riete disfrutando de un tres raya :D !!!</p>
+                </div>
+              </a>
+            </li>
+            <li class="items__list--product">
+              <a href="#contacto">
+                <div class="normal"><h2 class="LOGO-proyectos">&lt;runedev/&gt;</h2></div>
+                <div class="info">
+                  <h3>e-commerce</h3>
+                  <p>Disfrutamos verte crecer, nos aseguramos que tu e-commerce sea hecho a la medida de tus necesidades!!!</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="contenedor-proyectos__div">
+
+          <!-- carrusel con los proyectos realizados -->
 
           <div class="carrusel">
             <button class="carrusel-btn prev">&#10094;</button>
@@ -208,7 +256,7 @@
               <div class="slide">
 
                 <img src="/assets/img/logo/perro.png" alt="">
-                <a href="https://itnote.vercel.app" target="_blank" rel="noopener noreferrer">Appnotas</a>
+                <a href="https://itnote.vercel.app" target="_blank" rel="noopener noreferrer">ItNotes</a>
               </div>
               <!-- <div class="slide">
 
@@ -217,8 +265,8 @@
               </div> -->
               <div class=" slide">
 
-                <img src="/assets/img/logo/inventario.png" alt="">
-                <a href="https://sgdi.vercel.app" target="_blank" rel="noopener noreferrer">Inventario</a>
+                <img src="/assets/img/logo/copter.png" alt="">
+                <a href="https://copter.onrender.com" target="_blank" rel="noopener noreferrer">Copter</a>
               </div>
               <div class=" slide">
 
@@ -270,7 +318,7 @@
             </a>
           </li>
         </ul>
-        
+
       </div>
 
     </footer>
@@ -285,6 +333,7 @@
   <script src="/assets/js/animacionVW.js"></script>
   <script src="/assets/js/flipcard.js"></script>
   <script src="/assets/js/utils.js"></script>
+  <script src="/assets/js/direcctionHover.js"></script>
 </body>
 
 </html>
