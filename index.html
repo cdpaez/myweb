@@ -23,7 +23,7 @@
 
   <div class="envoltorio-principal">
 
-    <header class="header-container">
+    <!-- <header class="header-container">
 
       <h1 class="LOGO">&lt;runedev/&gt;</h1>
 
@@ -37,15 +37,52 @@
           <li><a class="hover-underline" href="#contacto">Contacto</a></li>
         </ul>
       </nav>
+    </header> -->
+    
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__logo">&lt;runedev/&gt;</h1>
+
+        <button id="menu-toggle" class="header__menu-toggle" aria-label="Menú">
+          <i class="fa-solid fa-bars" style="color: #B197FC;"></i>
+        </button>
+
+        <nav id="navbar" class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a class="header__nav-link hover-underline" href="#">Inicio</a></li>
+            <li class="header__nav-item"><a class="header__nav-link hover-underline" href="#servicios">Servicios</a>
+            </li>
+            <li class="header__nav-item"><a class="header__nav-link hover-underline" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="header__nav-item"><a class="header__nav-link hover-underline" href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
 
     <main class="main-container">
 
-      <section class="presentacion">
+      <!-- <section class="presentacion">
         <img src="/assets/img/fotos/banner.webp" alt="">
         <span id="presentacion__texto">Soy Carlos y me encantaría ayudarte en este mundo digital de
           oportunidades.</span>
+      </section> -->
+
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">Hola, soy <span class="highlight">Carlos</span></h1>
+            <p class="hero__subtitle">Te ayudo a destacar en el mundo digital con soluciones creativas y efectivas</p>
+            <div class="hero__cta">
+              <a href="#contacto" class="btn btn--primary">Hablemos de tu proyecto</a>
+              <a href="#servicios" class="btn btn--secondary">Conoce mis servicios</a>
+            </div>
+          </div>
+          <div class="hero__image">
+            <img src="/assets/img/fotos/banner.webp" alt="Carlos ayudando con proyectos digitales" class="hero__img">
+          </div>
+        </div>
       </section>
 
       <section class="contenedor-servicios" id="servicios">
@@ -210,7 +247,9 @@
 
             <li class="items__list--product">
               <a href="" onclick="event.preventDefault()">
-                <div class="normal"><h2 class="LOGO-proyectos">&lt;runedev/&gt;</h2></div>
+                <div class="normal">
+                  <h2 class="LOGO-proyectos">&lt;runedev/&gt;</h2>
+                </div>
                 <div class="info">
                   <h3>ItNotes</h3>
                   <p>App para tomar notas, chatear con amigos, y una espectacular agenda</p>
@@ -219,16 +258,21 @@
             </li>
             <li class="items__list--product">
               <a href="" onclick="event.preventDefault()">
-                <div class="normal"><h2 class="LOGO-proyectos">&lt;runedev/&gt;</h2></div>
+                <div class="normal">
+                  <h2 class="LOGO-proyectos">&lt;runedev/&gt;</h2>
+                </div>
                 <div class="info">
                   <h3>Copter</h3>
-                  <p>ERP centrado en gestionar productos, usuarios, ventas, estadisticas, para una muestra comuniquese con nosotros.</p>
+                  <p>ERP centrado en gestionar productos, usuarios, ventas, estadisticas, para una muestra comuniquese
+                    con nosotros.</p>
                 </div>
               </a>
             </li>
             <li class="items__list--product">
               <a href="" onclick="event.preventDefault()">
-                <div class="normal"><h2 class="LOGO-proyectos">&lt;runedev/&gt;</h2></div>
+                <div class="normal">
+                  <h2 class="LOGO-proyectos">&lt;runedev/&gt;</h2>
+                </div>
                 <div class="info">
                   <h3>Tres en Raya</h3>
                   <p>Te hartaste de todo? riete disfrutando de un tres raya :D !!!</p>
@@ -237,10 +281,13 @@
             </li>
             <li class="items__list--product">
               <a href="" onclick="event.preventDefault()">
-                <div class="normal"><h2 class="LOGO-proyectos">&lt;runedev/&gt;</h2></div>
+                <div class="normal">
+                  <h2 class="LOGO-proyectos">&lt;runedev/&gt;</h2>
+                </div>
                 <div class="info">
                   <h3>e-commerce</h3>
-                  <p>Disfrutamos verte crecer, nos aseguramos que tu e-commerce sea hecho a la medida de tus necesidades!!!</p>
+                  <p>Disfrutamos verte crecer, nos aseguramos que tu e-commerce sea hecho a la medida de tus
+                    necesidades!!!</p>
                 </div>
               </a>
             </li>
@@ -312,9 +359,9 @@
 
         <ul class="contactos__lista">
           <li class="contactos__lista-item">
-            <a href="https://www.instagram.com/runetedev">
-              <i class="fa-brands fa-instagram"></i>
-              <span> - Instagram</span>
+            <a href="https://wa.me/593983129683">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span> whatsapp</span>
             </a>
           </li>
         </ul>

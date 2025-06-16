@@ -97,8 +97,9 @@
     }
 
     .carrusel-servicios {
-        height: 90%;
+        height: 75%;
         width: 90%;
+        border-radius: 8px;
     }
 
     @keyframes blur-in {
