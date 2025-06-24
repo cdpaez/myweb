@@ -111,9 +111,9 @@
 }
 
 .carrusel-btn.prev {
-  left: 5px;
+  left: -5px;
 }
 
 .carrusel-btn.next {
-  right: 5px;
+  right: -5px;
 }
