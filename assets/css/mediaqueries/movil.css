@@ -1,7 +1,7 @@
 @media screen and (width < 768px) {
-    * {
+    /* * {
         outline: 1px solid red;
-    }
+    } */
 
     .header-container {
         height: 100%;
