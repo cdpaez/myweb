@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-.contactos__lista{
+.contactos__lista {
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   height: 100%;
   gap: 3em;
 }
-.contactos__lista-item{
+
+.contactos__lista-item {
   list-style: none;
   margin: 0 5px;
 }
-.fa-brands{
+
+.fa-brands {
   color: #262626;
   font-size: 15px;
   line-height: 80px;
   transition: .5s;
   padding-right: 10px;
 }
-.contactos__lista-item a{
+
+.contactos__lista-item a {
   width: 150px;
   height: 80px;
   background: #fff;
@@ -32,7 +35,8 @@
   transform: rotate(-30deg)skew(25deg)translate(0, 0);
   box-shadow: -20px 20px 10px #00000080;
 }
-.contactos__lista-item a span{
+
+.contactos__lista-item a span {
   color: #262626;
   padding: 0;
   margin: 0;
@@ -42,7 +46,8 @@
   transition: .5s;
   font-size: 12px;
 }
-.contactos__lista-item a:before{
+
+.contactos__lista-item a:before {
   content: '';
   position: absolute;
   height: 100%;
@@ -52,7 +57,8 @@
   left: -20px;
   transform: rotate(0deg) skewY(-45deg);
 }
-.contactos__lista-item a:after{
+
+.contactos__lista-item a:after {
   content: '';
   position: absolute;
   height: 20px;
@@ -62,60 +68,73 @@
   left: -10px;
   transform: rotate(0deg) skew(-45deg);
 }
-.contactos__lista-item a:hover{
+
+.contactos__lista-item a:hover {
   transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
   box-shadow: -50px 50px 50px #00000080;
 }
+
 .contactos__lista-item:hover .fa-brands,
-.contactos__lista-item:hover span{
+.contactos__lista-item:hover span {
   color: #fff;
 }
-.contactos__lista-item:hover:nth-child(1){
-  & a{
-  background: #25D366;
-  
-  &::before {
-    background: #128C7E;
-  }
-  
-  &::after {
-    background: #075E54;
-  }
-  
-  &:hover {
-    background: #128C7E;
+
+.contactos__lista-item:hover:nth-child(1) {
+  & a {
+    background: #25D366;
+
+    &::before {
+      background: #128C7E;
+    }
+
+    &::after {
+      background: #075E54;
+    }
+
+    &:hover {
+      background: #128C7E;
+    }
   }
 }
-}
-.contactos__lista-item:hover:nth-child(2){
-  & a{
+
+
+.contactos__lista-item:hover:nth-child(2) {
+  & a {
     background: #e4405f;
-    &::before{
+
+    &::before {
       background: #d81c3f;
     }
-    &::after{
+
+    &::after {
       background: #e46880;
     }
   }
 }
-.contactos__lista-item:hover:nth-child(3){
-  & a{
+
+.contactos__lista-item:hover:nth-child(3) {
+  & a {
     background: #dd4b39;
-    &::before{
+
+    &::before {
       background: #b33a2b;
     }
-    &::after{
+
+    &::after {
       background: #b33a2b;
     }
   }
 }
-.contactos__lista-item:hover:nth-child(4){
-  & a{
+
+.contactos__lista-item:hover:nth-child(4) {
+  & a {
     background: #e4405f;
-    &::before{
+
+    &::before {
       background: #d81c3f;
     }
-    &::after{
+
+    &::after {
       background: #e46880;
     }
   }

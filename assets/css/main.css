@@ -8,9 +8,13 @@
 @import url(/assets/css/seo/main/3-proyectos.css);
 
 /* componetes */
+@import url(/assets/css/componentes/direcctionHover.css);
 @import url(/assets/css/componentes/social-tiles.css);
 
 /* mediaqueries */
+@import url(/assets/css/mediaqueries/movil.css);
 @import url(/assets/css/mediaqueries/tablets.css);
 @import url(/assets/css/mediaqueries/laptop.css);
 @import url(/assets/css/mediaqueries/desktop.css);
+
+

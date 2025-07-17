@@ -1,5 +1,5 @@
 /* para dispositvos superiores al 1024px monitores y portatiles */
-@media screen and (min-width: 1024px) {
+@media screen and (width >=1024px) {
     .header-container {
         display: flex;
         flex-direction: row;
@@ -68,13 +68,18 @@
 
     /* estilos para el contenido principal */
     .main-container {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(3, 1fr);
+        display: flex;
+        flex-direction: column;
+
 
     }
 
     /* herosection */
+    .hero {
+        height: 100dvh;
+        background: url(/assets/img/banners/escritorio.webp) no-repeat bottom center / 100% 100%;
+    }
+
     .presentacion img {
         width: 20%;
         height: auto;
@@ -91,13 +96,15 @@
 
     /* servicios */
     .contenedor-servicios {
+        height: 100dvh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background: url('../../img/universe-bg.jpg') no-repeat center/cover;
     }
 
     .carrusel-servicios {
-        height: 75%;
+        height: clamp(50%,60%,70% );
         width: 90%;
         border-radius: 8px;
     }
@@ -120,7 +127,7 @@
     }
 
     .card {
-        height: 100vh;
+        height: 80vh;
         width: 100vw;
     }
 
@@ -165,8 +172,20 @@
         width: 80vw;
         height: 55vh;
     }
+    
 
     /* contenedor de los proyectos realizados */
+    .contenedor-proyectos {
+        background: url(/assets/img/banners/code.webp) no-repeat top center / 100% 100%;
+        width: 100%;
+        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
     /* efecto direcction hover */
     .container {
         width: 100%;
@@ -176,9 +195,19 @@
     .items__list {
         padding: 0;
         margin: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        place-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .items__list--product {
+        perspective: 500px;
+        float: left;
+        width: 250px;
+        height: 250px;
+        margin: 5px;
+        list-style: none;
+        position: relative;
     }
 
     .items__list> :nth-child(2n-1) {
@@ -191,73 +220,23 @@
         /* alinea a la izquierda en la segunda columna */
     }
 
-    .carrusel {
-        position: relative;
-        width: 50%;
-        height: 70vh;
-        overflow: hidden;
+    .info {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        background-color: rgba(10, 245, 234, .8);
+        color: white;
+        font-size: clamp(2rem, 1vw, 2rem);
     }
 
-    .carrusel-items {
-        display: flex;
-        transition: transform 0.5s ease;
-        width: 100%;
-    }
-
-    .slide {
-        min-width: 100%;
-        text-align: center;
-        padding: 1em;
-        box-sizing: border-box;
-        font-family: monospace;
-    }
-
-    .slide img {
-        width: 100px;
+    .info img {
         height: 100px;
-        object-fit: contain;
-        aspect-ratio: 1/1;
+        width: 100px;
     }
 
-    .slide a {
-        display: block;
-        margin-top: 1em;
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 3em;
-        color: white;
-    }
-
-    .carrusel-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: #A82272;
-        color: white;
-        border: none;
-        padding: 0.5em 1em;
-        font-size: 1em;
-        cursor: pointer;
-        z-index: 2;
-        border-radius: 10px;
-        opacity: 0.8;
-    }
-
-    .carrusel-btn:hover {
-        background: #DB0085;
-        opacity: 1;
-    }
-
-    .carrusel-btn.prev {
-        left: 10px;
-    }
-
-    .carrusel-btn.next {
-        right: 10px;
+    .LOGO-proyectos {
+        font-size: clamp(1rem, 2vw, 4rem);
     }
 
     /* pie de pagina web */

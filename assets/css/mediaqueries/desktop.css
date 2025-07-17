@@ -1,5 +1,5 @@
-/* para dispositvos superiores al 1024px monitores y portatiles */
-@media screen and (min-width: 1440px) {
+/* para dispositvos superiores al 1440px monitores y portatiles */
+@media screen and (width >= 1440px) {
     .header-container {
         display: flex;
         flex-direction: row;
@@ -66,6 +66,9 @@
     }
 
     /* hero-section */
+    .hero {
+        background: url(/assets/img/banners/escritorio.webp) no-repeat bottom center / 100% 100%;
+    }
 
     .presentacion {
         width: 100%;
@@ -108,8 +111,9 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        height: 100dvh;
         width: 100%;
-        background-color: #e2613d;
+        background: url('../../img/universe-bg.jpg') no-repeat center/cover;
     }
 
     @keyframes blur-in {
@@ -150,15 +154,15 @@
         font-size: clamp(1rem, 1.5vw, 2rem);
     }
 
-    .contenedor-proyectos__div {
-        width: 50%;
-    }
-
     .carrusel-servicios {
         height: 70%;
     }
 
     /* contenedor de los proyectos realizados */
+    .contenedor-proyectos__div {
+        width: 50%;
+    }
+
     /* efecto direcction hover */
     .container {
         width: 100%;
@@ -183,69 +187,34 @@
         /* alinea a la izquierda en la segunda columna */
     }
 
-    .carrusel {
+    .items__list--product {
+        perspective: 900px;
+        float: left;
+        width: 450px;
+        height: 450px;
+        margin: 5px;
+        list-style: none;
         position: relative;
-        width: 50%;
-        overflow: hidden;
+    }
+
+    .info {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
-    }
-
-    .carrusel-items {
-        display: flex;
-        transition: transform 0.5s ease;
-        width: 100%;
-    }
-
-    .slide {
-        min-width: 100%;
-        text-align: center;
-        padding: 1em;
-        box-sizing: border-box;
-        font-family: monospace;
-    }
-
-    .slide img {
-        width: 100px;
-    }
-
-    .slide a {
-        display: block;
-        margin-top: 1em;
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 3em;
+        align-items: center;
+        background-color: rgba(10, 245, 234, .8)
+;
         color: white;
+        font-size: clamp(2rem, 1vw, 2rem);
     }
 
-    .carrusel-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: #A82272;
-        color: white;
-        border: none;
-        padding: 0.5em 1em;
-        font-size: 1em;
-        cursor: pointer;
-        z-index: 2;
-        border-radius: 10px;
-        opacity: 0.8;
+    .info img {
+        height: 192px;
+        width: 192px;
     }
 
-    .carrusel-btn:hover {
-        background: #DB0085;
-        opacity: 1;
-    }
-
-    .carrusel-btn.prev {
-        left: 10px;
-    }
-
-    .carrusel-btn.next {
-        right: 10px;
+    .LOGO-proyectos {
+        font-size: clamp(1rem, 2vw, 4rem);
     }
 
     /* pie de pagina web */
@@ -284,43 +253,6 @@
         text-align: center;
         line-height: 2;
         padding: 1em;
-    }
-
-    .enlaces {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .enlaces ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .enlaces ul li {
-        background: #007bff;
-        padding: 1em;
-        border-radius: 5px;
-    }
-
-    .enlaces li:hover {
-        background-color: #A82272;
-    }
-
-
-    .enlaces ul li a {
-        font-family: monospace;
-        font-size: 2em;
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        display: block;
-
-        width: 100%;
-        height: 100%;
-        margin: auto;
     }
 
     .contactos {

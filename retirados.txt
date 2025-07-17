@@ -1,0 +1,38 @@
+<div class="contenedor-proyectos__div">
+
+          <!-- carrusel con los proyectos realizados -->
+
+          <div class="carrusel">
+            <button class="carrusel-btn prev">&#10094;</button>
+            <div class="carrusel-items">
+              <div class="slide">
+
+                <img src="/assets/img/logo/perro.png" alt="">
+                <a href="https://itnote.vercel.app" target="_blank" rel="noopener noreferrer">ItNotes</a>
+              </div>
+              <!-- <div class="slide">
+
+                <img src="/assets/img/logo/balanza.jpg" alt="">
+                <a href="https://abogados-beta.vercel.app" target="_blank" rel="noopener noreferrer"">Atheneum</a>
+              </div> -->
+              <div class=" slide">
+
+                <img src="/assets/img/logo/copter.png" alt="">
+                <a href="https://copter.onrender.com" target="_blank" rel="noopener noreferrer">Copter</a>
+              </div>
+              <div class=" slide">
+
+                <img src="/assets/img/logo/tic-tac-toe.png" alt="">
+                <a href="https://tic-tac-toe-three-green-24.vercel.app" target="_blank" rel="noopener noreferrer">Tic
+                  Tac Toe</a>
+              </div>
+              <div class=" slide">
+
+                <img src="/assets/img/logo/workstation.png" alt="">
+                <a href="https://jd-store.vercel.app/" target="_blank" rel="noopener noreferrer">Landingpage</a>
+              </div>
+              <!-- ... más slides -->
+            </div>
+            <button class="carrusel-btn next">&#10095;</button>
+          </div>
+        </div>
