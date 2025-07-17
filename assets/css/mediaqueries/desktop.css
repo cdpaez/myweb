@@ -142,8 +142,9 @@
     }
 
     .card__face--front img {
-        width: 75%;
-        height: 75%;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
     }
 
     .card__body h3 {

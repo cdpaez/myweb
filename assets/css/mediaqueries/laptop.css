@@ -1,5 +1,5 @@
 /* para dispositvos superiores al 1024px monitores y portatiles */
-@media screen and (width >=1024px) {
+@media screen and (1024px <= width < 1440px) {
     .header-container {
         display: flex;
         flex-direction: row;
@@ -201,10 +201,10 @@
     }
 
     .items__list--product {
-        perspective: 500px;
+        perspective: 400px;
         float: left;
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         margin: 5px;
         list-style: none;
         position: relative;
@@ -230,7 +230,7 @@
         font-size: clamp(2rem, 1vw, 2rem);
     }
 
-    .info img {
+    .info a img {
         height: 100px;
         width: 100px;
     }
