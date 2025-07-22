@@ -68,6 +68,7 @@
     /* hero-section */
     .hero {
         background: url(/assets/img/banners/escritorio.webp) no-repeat bottom center / 100% 100%;
+        height: 100dvh;
     }
 
     .presentacion {
