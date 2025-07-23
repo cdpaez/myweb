@@ -190,10 +190,10 @@
     }
 
     .items__list--product {
-        perspective: 900px;
+        perspective: 800px;
         float: left;
-        width: 450px;
-        height: 450px;
+        width: 400px;
+        height: 400px;
         margin: 5px;
         list-style: none;
         position: relative;
