@@ -66,6 +66,12 @@
         text-align: center;
     }
 
+    .btn {
+
+        border-radius: 5px;
+
+    }
+
     .btn--primary {
         font-size: clamp(.7rem, 1vw, 2rem);
         background-color: #3a7bd5;
@@ -140,7 +146,7 @@
     .contenedor-proyectos {
         background: url(/assets/img/banners/code.webp) no-repeat top center / 100% 100%;
         width: 100%;
-        height: 100dvh;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -150,7 +156,10 @@
 
     /* efecto direcction hover */
     .container {
-        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
         margin: 50px auto;
     }
 
@@ -163,13 +172,20 @@
     }
 
     .items__list--product {
-        perspective: 200px;
+        perspective: 300px;
         float: left;
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         margin: 5px;
         list-style: none;
         position: relative;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .info a img {
